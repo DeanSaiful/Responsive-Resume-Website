@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+  <header style="z-index: 999;">
+    <div class="logo">
+        <a href="#">Saiful Dean</a>
+        <p>&nbsp;<span>/</span> Frontend Developer</p>
+    </div>
+    <div class="navBar" id="navBar">
+        <a href="landing page.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="project.html">Project</a>
+        <a href="" class="current">Contact</a>
+    </div>
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+    <div class="close-icon" id="closeIcon">&#10006;</div>
+  </header>
+  <section>
+    <h1>Get in touch</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni delectus voluptates consequatur vitae aperiam culpa quidem, explicabo, iure quibusdam, ea molestias fuga nam consequuntur quia voluptatum cumque deleniti itaque voluptatem.</p>
+    <form action="submit_form.php" method="post">
+      <div class="input-box">
+        <div class="input-one">
+          <label for="first_name">First Name <span>*</span></label>
+          <input type="text" id="first_name" name="first_name" required><br><br>
+        </div>
+        <div class="input-two">
+          <label for="last_name">Last Name <span>*</span></label>
+          <input type="text" id="last_name" name="last_name" required><br><br>
+        </div>
+      </div>
+      
+      <div class="input-box">
+        <div class="input-one">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" id="email" name="email" required><br><br>
+        </div>
+        <div class="input-two">
+          <label for="subject">Subject </label>
+          <input type="text" id="subject" name="subject"><br><br>
+        </div>
+      </div>
+      
+      <div class="input-box-message">
+        <label for="message">Message <span>*</span></label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      </div>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+  <footer>
+    <div class="copyright">
+        <p>&copy; 2023 by Saiful Dean</p>
+        <p>Frontend Developer</p>
+    </div>
+    <div class="contact">
+        <div class="footer_email">
+            <p class="subtitle">Write</p>
+            <br>
+            <p>deansaiful191@gmail.com</p>
+        </div>
+        <div class="footer_social">
+            <p>Follow</p>
+            <br>
+            <div class="social_link">
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-github-alt"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <script src="./js/navigation menu.js"></script>
+</body>
+</html>

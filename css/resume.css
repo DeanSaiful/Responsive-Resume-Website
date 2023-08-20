@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 180px 0;
+    background-color: #e6dace;
+}
+section h1{
+    font-family: 'Sora', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+.experience {
+    width: 700px;
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.title h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+}
+.title a{
+    padding: 8px 18px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #116DFF;
+    border: 1.5px solid #116DFF;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 1s ease-in-out;
+}
+.title a:hover {
+    background-color: transparent;
+    color: black;
+    border-color: #116DFF;
+    border: 1.5px solid #116DFF;
+
+}
+
+.container {
+    /* width: 100%; */
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 90px 50px 60px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #0a56d1;
+}
+.contents {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+.details {
+    width: 40%;
+    margin-top: 10px;
+}
+.description {
+    width: 60%;
+    margin-top: 10px;
+    letter-spacing: 0.2px;
+}
+.details p {
+    margin-bottom: 10px;
+}
+.details p:nth-child(1){
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.education , .skills{
+    width: 700px;
+    margin: 0 80px 80px;
+    display: flex;
+    flex-direction: column;
+}
+.skillset h3 {
+    color: black;
+    font-size: 27px;
+}
+.container ul {
+    list-style: none;
+    padding: 40px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container ul li:before {
+    content: "\25A0";
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: -7px;
+    color: #0a56d1;
+}
+.container ul li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    margin-bottom: 30px;
+    letter-spacing: 0.2px;
+    width: 50%;
+    display: flex
+}
+
+@media (max-width: 750px) {
+    section {
+        padding: 160px 0 0 0;
+    }
+    .experience, .education , .skills {
+        width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience, .education , .skills {
+        width: 350px;
+    }
+    .container {
+        margin-bottom: 50px;
+        padding: 50px 20px 30px;
+    }
+    .contents {
+        flex-direction: column;
+
+    }
+    .details {
+        width: 100%;
+
+    }
+    .description {
+        width: 100%;
+    }
+    .container ul {
+        flex-direction: column;
+    }
+    .container ul li {
+        width: 100%;
+    }
+}

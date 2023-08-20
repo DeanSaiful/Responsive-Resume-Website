@@ -1,0 +1,142 @@
+header {
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 360px); /* Subtracting 180px from both sides */
+    padding: 30px 180px; /* Adding margin */
+}
+
+.logo {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.logo p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}  
+.navBar {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBar a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 0 10px;
+    color: black;
+}
+.navBar a:hover {
+    color: #116dff;
+}
+.navBar .current {
+    color: #116dff;
+}
+.menu-icon,   .close-icon  {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+    margin: 20px;
+}
+
+@media (max-width: 750px) {
+    header {
+        width: 100%;
+        padding: 10px 0 10px;
+        background-color: #fafafa;
+        box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+        display: block;
+    }
+    .logo a {
+        margin-left: 10px;
+    }
+    span {
+        display: none;
+    }
+    .navBar {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #fafafa;
+        box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .navBar.active {
+        display: flex;
+    }
+    .navBar a {
+        padding: 10px;
+        color: black;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .close-icon {
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+        padding: 10px 0 20px;
+        background-color: #fafafa;
+        box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo {
+        display: block;
+    }
+    .logo a {
+        margin-left: 10px;
+    }
+    span {
+        display: none;
+    }
+    .navBar {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #fafafa;
+        box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .navBar.active {
+        display: flex;
+    }
+    .navBar a {
+        padding: 10px;
+        color: black;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .close-icon {
+        display: none;
+    }
+}
