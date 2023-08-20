@@ -21,7 +21,7 @@ This repository contains the code for my personal resume website. The website co
   - header.css: Styling for the header/navigation menu.
   - footer.css: Styling for the footer.
 * JavaScript Files
-  -resume.js: JavaScript file for generating a downloadable PDF version of the resume and handling other related functionality.
+  - resume.js: JavaScript file for generating a downloadable PDF version of the resume and handling other related functionality.
   - navigation.js: JavaScript file for responsive navigation menu when the page width is 750px or 480px.
 
 # Usage
